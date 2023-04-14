@@ -3,7 +3,6 @@ package service.venda;
 import entity.Item;
 import entity.Produto;
 import entity.Venda;
-import service.Cliente.CrudClientePJ;
 import service.Item.CrudItem;
 import service.Produto.CrudProduto;
 
