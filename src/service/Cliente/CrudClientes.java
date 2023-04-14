@@ -70,7 +70,7 @@ public class CrudClientes implements CrudCliente {
         }
     }
 
-    public void popularClientePF() {
+    public void popularCliente() {
         ClientePF cliente1 = new ClientePF();
         cliente1.setId(1);
         cliente1.setNome("Fulano da Silva");

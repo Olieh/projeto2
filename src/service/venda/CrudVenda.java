@@ -3,6 +3,7 @@ package service.venda;
 import entity.Item;
 import entity.Produto;
 import entity.Venda;
+import service.Cliente.CrudClientes;
 import service.Item.CrudItem;
 import service.Produto.CrudProduto;
 
@@ -91,11 +92,11 @@ public class CrudVenda {
         }
     }
 
-    public void popularLista(CrudClientePJ crudClientePJ, CrudProduto crudProduto, CrudItem crudItem) {
+    public void popularLista(CrudClientes crudCliente, CrudProduto crudProduto, CrudItem crudItem) {
         Venda venda1 = new Venda();
         venda1.setId(1);
         venda1.setData(LocalDate.now());
-        venda1.setCliente(crudClientePJ.listaCliente.get(1));
+        venda1.setCliente(crudCliente.listaCliente.get(1));
 
         Map<String, Item> listaItem1 = new HashMap<>();
         listaItem1.put(crudProduto.listaProduto.get(1).getNome(), crudItem.listaItem.get(1));
